@@ -11,7 +11,4 @@ class OnCityChanged extends WeatherEvent {
   final String cityName;
 
   const OnCityChanged(this.cityName);
-
-  @override
-  List<Object?> get props => [cityName];
 }

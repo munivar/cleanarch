@@ -10,13 +10,14 @@ class WeatherModel extends WeatherEntity {
     required int pressure,
     required int humidity,
   }) : super(
-            cityName: cityName,
-            main: main,
-            description: description,
-            iconCode: iconCode,
-            temperature: temperature,
-            pressure: pressure,
-            humidity: humidity);
+          cityName: cityName,
+          main: main,
+          description: description,
+          iconCode: iconCode,
+          temperature: temperature,
+          pressure: pressure,
+          humidity: humidity,
+        );
 
   factory WeatherModel.fromJson(Map<String, dynamic> json) => WeatherModel(
         cityName: json['name'],

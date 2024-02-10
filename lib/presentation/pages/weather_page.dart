@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import '../../core/constants/constants.dart';
 import '../bloc/weather_bloc.dart';
 import '../bloc/weather_event.dart';
@@ -48,6 +47,11 @@ class WeatherPage extends StatelessWidget {
                 if (state is WeatherLoading) {
                   return const Center(
                     child: CircularProgressIndicator(),
+                  );
+                }
+                if (state is WeatherLoadFailue) {
+                  return Center(
+                    child: Text(state.message),
                   );
                 }
                 if (state is WeatherLoaded) {
@@ -160,11 +164,6 @@ class WeatherPage extends StatelessWidget {
                         ],
                       ),
                     ],
-                  );
-                }
-                if (state is WeatherLoadFailue) {
-                  return Center(
-                    child: Text(state.message),
                   );
                 }
                 return Container();
