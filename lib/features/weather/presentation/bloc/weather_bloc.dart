@@ -1,6 +1,6 @@
-import 'package:cleanarch/domain/usecases/get_current_weather.dart';
-import 'package:cleanarch/presentation/bloc/weather_event.dart';
-import 'package:cleanarch/presentation/bloc/weather_state.dart';
+import 'package:cleanarch/features/weather/domain/usecases/get_current_weather.dart';
+import 'package:cleanarch/features/weather/presentation/bloc/weather_event.dart';
+import 'package:cleanarch/features/weather/presentation/bloc/weather_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:rxdart/rxdart.dart';
 

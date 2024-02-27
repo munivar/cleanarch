@@ -1,4 +1,4 @@
-import 'package:cleanarch/domain/entities/weather_entity.dart';
+import 'package:cleanarch/features/weather/domain/entities/weather_entity.dart';
 import 'package:equatable/equatable.dart';
 
 abstract class WeatherState extends Equatable {

@@ -1,7 +1,7 @@
-import 'package:cleanarch/core/constants/constants.dart';
 import 'package:cleanarch/core/error/exception.dart';
-import 'package:cleanarch/data/data_sources/remote_data_source.dart';
-import 'package:cleanarch/data/models/weather_model.dart';
+import 'package:cleanarch/core/services/api_const.dart';
+import 'package:cleanarch/features/weather/data/data_sources/remote_data_source.dart';
+import 'package:cleanarch/features/weather/data/models/weather_model.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 import 'package:http/http.dart' as http;
@@ -24,7 +24,7 @@ void main() {
     test('should return weather model when the response code is 200', () async {
       //arrange
       when(mockHttpClient
-              .get(Uri.parse(Urls.currentWeatherByName(testCityName))))
+              .get(Uri.parse(ApiConst.currentWeatherByName(testCityName))))
           .thenAnswer((_) async => http.Response(
               readJson('helpers/dummy_data/dummy_weather_response.json'), 200));
 
@@ -42,7 +42,7 @@ void main() {
         //arrange
         when(
           mockHttpClient
-              .get(Uri.parse(Urls.currentWeatherByName(testCityName))),
+              .get(Uri.parse(ApiConst.currentWeatherByName(testCityName))),
         ).thenAnswer((_) async => http.Response('Not found', 404));
 
         //act

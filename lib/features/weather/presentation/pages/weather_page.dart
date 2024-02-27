@@ -1,6 +1,6 @@
+import 'package:cleanarch/core/services/api_const.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../core/constants/constants.dart';
 import '../bloc/weather_bloc.dart';
 import '../bloc/weather_event.dart';
 import '../bloc/weather_state.dart';
@@ -69,7 +69,7 @@ class WeatherPage extends StatelessWidget {
                           ),
                           Image(
                             image: NetworkImage(
-                              Urls.weatherIcon(
+                              ApiConst.weatherIcon(
                                 state.result.iconCode,
                               ),
                             ),

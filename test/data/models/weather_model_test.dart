@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:cleanarch/data/models/weather_model.dart';
-import 'package:cleanarch/domain/entities/weather_entity.dart';
+import 'package:cleanarch/features/weather/data/models/weather_model.dart';
+import 'package:cleanarch/features/weather/domain/entities/weather_entity.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import '../../helpers/json_reader.dart';

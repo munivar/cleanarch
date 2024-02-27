@@ -1,5 +1,5 @@
-import 'package:cleanarch/domain/entities/weather_entity.dart';
-import 'package:cleanarch/domain/usecases/get_current_weather.dart';
+import 'package:cleanarch/features/weather/domain/entities/weather_entity.dart';
+import 'package:cleanarch/features/weather/domain/usecases/get_current_weather.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';

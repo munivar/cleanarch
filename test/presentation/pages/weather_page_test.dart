@@ -1,10 +1,10 @@
 import 'dart:io';
 import 'package:bloc_test/bloc_test.dart';
-import 'package:cleanarch/domain/entities/weather_entity.dart';
-import 'package:cleanarch/presentation/bloc/weather_bloc.dart';
-import 'package:cleanarch/presentation/bloc/weather_event.dart';
-import 'package:cleanarch/presentation/bloc/weather_state.dart';
-import 'package:cleanarch/presentation/pages/weather_page.dart';
+import 'package:cleanarch/features/weather/domain/entities/weather_entity.dart';
+import 'package:cleanarch/features/weather/presentation/bloc/weather_bloc.dart';
+import 'package:cleanarch/features/weather/presentation/bloc/weather_event.dart';
+import 'package:cleanarch/features/weather/presentation/bloc/weather_state.dart';
+import 'package:cleanarch/features/weather/presentation/pages/weather_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_test/flutter_test.dart';

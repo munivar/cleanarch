@@ -1,9 +1,9 @@
 import 'package:bloc_test/bloc_test.dart';
 import 'package:cleanarch/core/error/failure.dart';
-import 'package:cleanarch/domain/entities/weather_entity.dart';
-import 'package:cleanarch/presentation/bloc/weather_bloc.dart';
-import 'package:cleanarch/presentation/bloc/weather_event.dart';
-import 'package:cleanarch/presentation/bloc/weather_state.dart';
+import 'package:cleanarch/features/weather/domain/entities/weather_entity.dart';
+import 'package:cleanarch/features/weather/presentation/bloc/weather_bloc.dart';
+import 'package:cleanarch/features/weather/presentation/bloc/weather_event.dart';
+import 'package:cleanarch/features/weather/presentation/bloc/weather_state.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';

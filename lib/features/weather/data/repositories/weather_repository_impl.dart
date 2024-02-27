@@ -1,10 +1,10 @@
 import 'dart:io';
 import 'package:cleanarch/core/error/failure.dart';
-import 'package:cleanarch/data/data_sources/remote_data_source.dart';
-import 'package:cleanarch/domain/entities/weather_entity.dart';
-import 'package:cleanarch/domain/repositories/weather_repository.dart';
+import 'package:cleanarch/features/weather/data/data_sources/remote_data_source.dart';
+import 'package:cleanarch/features/weather/domain/entities/weather_entity.dart';
+import 'package:cleanarch/features/weather/domain/repositories/weather_repository.dart';
 import 'package:dartz/dartz.dart';
-import '../../core/error/exception.dart';
+import '../../../../core/error/exception.dart';
 
 class WeatherRepositoryImpl extends WeatherRepository {
   final WeatherRemoteDataSource weatherRemoteDataSource;

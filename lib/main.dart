@@ -1,8 +1,8 @@
 import 'package:cleanarch/injection_container.dart';
-import 'package:cleanarch/presentation/pages/weather_page.dart';
+import 'package:cleanarch/features/weather/presentation/pages/weather_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'presentation/bloc/weather_bloc.dart';
+import 'features/weather/presentation/bloc/weather_bloc.dart';
 
 void main() {
   setupLocator();

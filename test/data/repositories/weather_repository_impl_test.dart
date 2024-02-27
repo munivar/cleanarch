@@ -1,9 +1,9 @@
 import 'dart:io';
 import 'package:cleanarch/core/error/exception.dart';
 import 'package:cleanarch/core/error/failure.dart';
-import 'package:cleanarch/data/models/weather_model.dart';
-import 'package:cleanarch/data/repositories/weather_repository_impl.dart';
-import 'package:cleanarch/domain/entities/weather_entity.dart';
+import 'package:cleanarch/features/weather/data/models/weather_model.dart';
+import 'package:cleanarch/features/weather/data/repositories/weather_repository_impl.dart';
+import 'package:cleanarch/features/weather/domain/entities/weather_entity.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
